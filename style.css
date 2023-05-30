@@ -1,0 +1,184 @@
+body {
+    background-color: #FFFFCC;
+}
+/* NAV BAR */
+.navbar {
+    background-color: #EE9CCA;
+    margin-bottom: 1em;
+}
+.navbar-collapse {
+    display: flex;
+    justify-content: end;
+}
+/* PÁGINA INICIO */
+.titulos {
+    text-align: center;
+    font-family: 'Pangolin', cursive;
+}
+.imagenes {
+    margin: 1em;
+    padding: 1em;
+    background-color: black;
+}
+.image-container {
+    height: 20em; 
+}
+.image-container img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.texto {
+    font-family: 'Dosis', sans-serif;
+    padding: .5em;
+    font-size: x-large;
+}
+/* PÁGINA PRODUCTOS */
+/* sección productos */
+main {
+    margin-bottom: 1em;
+}
+.accordion {
+    width: 60%;
+    margin: auto;
+    border: 5px solid #EE9CCA;
+    border-radius: 10px;
+}
+.accordion-button {
+    background-color: #EE9CCA;
+}
+.accordion-body {
+    display: flex;
+    flex-direction: column;
+}
+.accordion-body .productos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.accordion-body .productos .variedades {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: .3em 0;
+    width: 100%;
+}
+.accordion-body input {
+    width: 3em;
+    border: transparent;
+}
+.accordion-body button {
+    align-items: center;
+    margin: .7em 0;
+}
+/* BOTONES */
+#btnCarr, #limpCarr, #btnPago {
+    display: block;
+    margin: .5em auto;
+    background-color: #EE9CCA;
+}
+.bi {
+    font-size: large;
+    padding-right: .5em;
+}
+#btnPago {
+    font-size: x-large;
+    padding: .2em 1em;
+}
+/* PÁGINA CARRITO */
+.seccCarrito {
+    margin: 3em;
+    width: 60%;
+    margin: auto;
+    border: 5px solid #EE9CCA;
+    border-radius: 10px;
+}
+.seccCarrito h2 {
+    text-align: center;
+    margin: .5em;
+}
+.detalle {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.cantidad {
+    padding-left: 10%;
+}
+.precio {
+    text-align: center;
+}
+.vacio {
+    text-align: center;
+    color: #EE9CCA;
+    font-size: x-large;
+}
+    /* medios de pago */
+.mediosPago {
+    margin: .5em;
+    display: flex;
+    justify-content: center;
+}
+.centrar {
+    text-align: center;
+}
+#btnTra, #btnCre, #btnDeb {
+    background-color: #EE9CCA;
+}
+#datos {
+    background-color: #EE9CCA;
+    margin: .5em;
+    border-radius: 10px;
+}
+#datos .contenido {
+    padding: .5em;
+}
+#datos .contenido .listo {
+    background-color: #FFFFCC;
+    width: 10em;
+    font-size: large;
+    display: block;
+    margin: auto ;
+}
+.datosTarj .row label{
+    text-align: center;
+}
+.datosTarj .row input{
+    width: 10em;
+}
+#mediosPago, #datosTra, .datosTarj {
+    display: none;
+} 
+.camposForm {
+    padding: .5em 0;
+}
+.camposForm input{
+    border: transparent;
+}
+.aviso {
+    text-align: center;
+}
+.borroso {
+    opacity: .5;
+}
+/* FOOTER */
+footer {
+    background-color: #EE9CCA;
+    padding-bottom: 1em;
+}
+.footer-logo {
+    margin: 1em;
+    height: 7em;
+    width: 7em;
+    border-radius: 100%;
+}
+.iconos-redes-sociales .bi {
+    font-size: 2em;
+    color: black;
+}
+.derechos-de-autor {
+    font-size: small;
+}
+

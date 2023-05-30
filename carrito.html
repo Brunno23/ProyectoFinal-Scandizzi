@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- ETIQUETAS META -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"> 
+    <!-- JQUERY -->
+    <script
+    src="https://code.jquery.com/jquery-3.7.0.js"
+    integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+    crossorigin="anonymous"></script>
+    <!-- TOASTIFY -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+    <title>Cheff Gina</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg" >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Cheff Gina</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              <a class="nav-link" href="productos.html">Productos</a>
+              <a class="nav-link" href="carrito.html">Carrito</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="seccCarrito">
+        <h2 class="titulos">Carrito de compras</h2>
+        <div id="carrito">
+        </div>
+        <div id="totalCarr">
+        </div>
+        <!-- PAGAR -->
+        <button id="btnPago" class="btn">PAGAR</button>
+        <div id="mediosPago" class="mediosPago">
+          <p class="centrar">
+            <button id="btnTra" class="btn">Transferencia</button>
+            <button id="btnDeb" class="btn">Tarjeta de débito</button>
+            <button id="btnCre" class="btn">Tarjeta de crédito</button>
+          </p>
+        </div>
+        <div id="datos">
+          <div id="datosTra" class="contenido container-fluid justify-content-center">
+            <ul class="row">
+              <li class="col-6">Alias: cheff.gina</li>
+              <li class="col-6">CBU: 1234567890098765432112</li>
+              <li class="col-6">Titular: Cheff Gina</li>
+              <li class="col-6">CUIT: 27-12345678-9</li> 
+            </ul>
+            <button class="listo listoT btn">LISTO!</button>
+          </div>
+          <div id="datosCre" class="container-fluid contenido datosTarj">
+            <p class="aviso">Próximamente se habilitará esta opción. Disculpe las molestias.</p>
+            <div class="borroso">
+              <form class="row"> 
+                <div class="camposForm">
+                <label class="col-8" for="nombre">Nombre del titular</label>
+                <input class="col-4 nombre" id="" name="nombre" type="text" disabled > 
+                </div>
+                <div class="camposForm">
+                <label class="col-8" for="numero">Número de tarjeta</label>
+                <input class="col-4 numTarj" id="" name="numero" type="number"disabled > 
+                </div>
+                <div class="camposForm">
+                <label class="col-8" for="vencimiento">Fecha de vencimiento</label>
+                <input class="col-4 venc" id="v" name="vencimiento" type="date" disabled > 
+                </div>
+                <div class="camposForm">
+                <label class="col-8" for="codSeg">Código de seguridad</label> 
+                <input class="col-4 numTarjClave" id="codCred" name="codSeg" type="number" disabled > 
+                </div>
+              </form>
+              <button class="listo btn">LISTO!</button>
+            </div>
+          </div>
+          <div id="datosDeb" class="container-fluid contenido datosTarj">
+            <p class="aviso">Próximamente se habilitará esta opción. Disculpe las molestias.</p>
+            <div class="borroso">
+              <form class="row"> 
+                <div class="camposForm">
+                <label class="col-8" for="nombre">Nombre del titular</label>
+                <input class="col-4 nombre" id="" name="nombre" type="text" disabled> 
+                </div>
+                <div class="camposForm">
+                <label class="col-8" for="numero">Número de tarjeta</label>
+                <input class="col-4 numTarj" id="" name="numero" type="number" disabled> 
+                </div>
+                <div class="camposForm">
+                <label class="col-8" for="vencimiento">Fecha de vencimiento</label>
+                <input class="col-4 venc" id="v" name="vencimiento" type="date"  disabled> 
+                </div>
+                <div class="camposForm">
+                <label class="col-8" for="codSeg">Código de seguridad</label> 
+                <input class="col-4 numTarjClave" id="codCred" name="codSeg" type="number" disabled> 
+                </div>
+              </form>
+              <button class="listo btn">LISTO!</button>
+            </div>
+          </div>
+        </div>
+        <!-- LIMPIAR CARRITO -->
+        <button id="limpCarr" class="btn"><i class="bi bi-cart-x-fill"></i>Limpiar carrito</button>
+      </section>
+    </main> 
+
+    <!-- FOOTER -->
+    <footer class="d-flex flex-column align-items-center justify-content-center"> 
+      <img class="footer-logo" src="imagenes/logo.jpeg" alt="Logo de Cheff Gina">
+      <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
+        <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-twitter"></i>
+        </a>
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-facebook"></i>
+        </a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-instagram"></i>
+        </a>
+      </div>
+      <div class="derechos-de-autor">Todos los derechos reservados &#169;</div>
+    </footer>
+
+    <!-- ARCHIVO JS -->
+    <script src="js/carrito.js"></script>
+    <!-- TOASTIFY -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <!-- BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+  </body>
+
+</html>

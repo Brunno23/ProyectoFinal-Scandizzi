@@ -1,0 +1,12 @@
+[   
+    {"id" : 0, "tipo" : "empanadas", "sab" : "Carne", "precio" : 300},
+    {"id" : 1, "tipo" : "empanadas", "sab" : "Jamón y queso", "precio" : 250},
+    {"id" : 2, "tipo" : "empanadas", "sab" : "Árabes", "precio" : 300},
+    {"id" : 3, "tipo" : "empanadas", "sab" : "Verdura", "precio" : 250},
+    {"id" : 4, "tipo" : "empanadas", "sab" : "Matambre", "precio" : 300},
+    {"id" : 5, "tipo" : "empanadas", "sab" : "Cebolla", "precio" : 250},
+    {"id" : 6, "tipo" : "budines", "sab" : "Zanahoria", "precio" : 750},
+    {"id" : 7, "tipo" : "budines", "sab" : "Limón glaseado", "precio" : 700},
+    {"id" : 8, "tipo" : "budines", "sab" : "Marmolado", "precio" : 750},
+    {"id" : 9, "tipo" : "budines", "sab" : "Chocolate y nueces", "precio" : 800}
+]    
